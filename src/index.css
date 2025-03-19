@@ -3,8 +3,13 @@ html{
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 :root{
   --primary: #000;
+  --secondary: rgb(24 24 27);
 }
 
 .light{
@@ -14,4 +19,15 @@ html{
 body{
   background-color: var(--primary);
   color: #fff;
+}
+.App{
+  border: #fff solid 1px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  background-color: var(--secondary);
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
 }
