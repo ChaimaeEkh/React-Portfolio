@@ -1,70 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-html{
+
+html {
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.1px;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
 }
-:root{
+
+:root {
   --primary: #000;
-  --secondary: rgb(24 24 27);
+  --secondary: rgb(24, 24, 27);
   --border: rgba(63, 63, 70, 0.4);
-  --bgHeader: rgb(39,39,42);
+  --bgHeader: rgb(39, 39, 42);
   --title: rgb(244, 244, 245);
   --subtitle: rgb(161, 161, 170);
-  --blue: rgb(93,188,252);
+  --blue: rgb(93, 188, 252);
 }
 
-.light{
+.light {
   --primary: #fff;
+  --secondary: rgb(240, 240, 245);
+  --border: rgba(180, 180, 190, 0.4);
+  --bgHeader: rgb(220, 220, 225);
+  --title: rgb(24, 24, 27);
+  --subtitle: rgb(82, 82, 91);
+  --blue: rgb(14, 165, 233);
 }
 
-body{
+body {
   background-color: var(--primary);
-  color: #fff;
+  color: var(--title);
 }
-.App{
+
+.App {
   border: var(--border) solid 1px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 10px auto;
   padding: 10px;
   width: 80%;
   background-color: var(--secondary);
-  color: #fff;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.divider{
+.divider {
   border: 1px solid var(--border);
   margin: 3rem 0;
 }
 
-li{
+li {
   list-style: none;
 }
-a{
+
+a {
   all: unset;
   transition: 0.2s;
-}
-a:hover{
   cursor: pointer;
 }
 
-.flex{
+a:hover {
+  cursor: pointer;
+}
+
+.flex {
   display: flex;
   align-items: center;
 }
 
-
-.border{
+.border {
   border: 1px solid var(--border);
 }
 
-button{
-  background-color: red;
+button {
   all: unset;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .App {
+    width: 95%;
+    margin: 5px auto;
+  }
 }
